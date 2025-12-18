@@ -1,40 +1,201 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="supported-color-schemes" content="dark light">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/mobile-icon.png">
+  <link rel="preconnect" href="./fonts/fonts.css" as="style">
+  <title>Трудно сконцентрироваться</title>
+</head>
+<body class="site-container">
+  <header class="page-header framed-section">
+    <div class="theme-selector">
+      <ul class="theme-options">
+        <li class="theme-option">
+          <button class="theme-switch light-switch" type="button">
+            светлый
+          </button>
+        </li>
+        <li class="theme-option">
+          <button class="theme-switch auto-switch active" disabled>
+            авто
+          </button>
+        </li>
+        <li class="theme-option">
+          <button class="theme-switch dark-switch" type="button">
+            тёмный
+          </button>
+        </li>
+      </ul>
+    </div>
+    <h1 class="main-heading">рассеянность</h1>
+    <p class="subheading">
+      Что делать, если ничего не получается<br>
+      Или почему так трудно удержать внимание, когда это особенно необходимо
+    </p>
+    <span class="rec-label" aria-hidden="true">rec</span>
+  </header>
+  <main class="main-content">
+    <section class="content-block block-one">
+      <h2 class="block-title">Причины рассеянности</h2>
+      <div class="articles-container">
+        <article class="post">
+          <h3 class="post-title">Слишком много задач</h3>
+          <div class="post-body">
+            <p>
+              Концентрация становится сложной, когда важных дел накапливается много.
+              Где же знаменитая многозадачность, когда она необходима?
+              Оказывается, это миф. Учёные
+              <a
+                class="highlighted"
+                href="https://www.dana.org/article/multicosts-of-multitasking/"
+                target="_blank"
+              >обнаружили</a>, что мозг не может эффективно выполнять даже две задачи сразу.
+              Когда в поле зрения появляется несколько срочных дел, организм реагирует выбросом
+              кортизола и адреналина — гормонов напряжения. Это приводит к ошибкам и быстрой утомляемости.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h3 class="post-title">Дофаминовый эффект</h3>
+          <div class="post-body">
+            <p>
+              Кроме гормонов стресса, важную роль играет дофамин — участник системы поощрения мозга.
+              Мы часто переключаемся с важной работы на более приятные занятия: проверяем соцсети,
+              смотрим развлечения. В такие моменты вырабатывается дофамин, создающий чувство
+              удовлетворения. Образуется цикл: чем чаще отвлекаешься, тем больше хочется это делать.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="content-block block-two">
+      <h2 class="block-title">Что мешает сосредоточению?</h2>
+      <div class="articles-container">
+        <article class="post">
+          <h3 class="post-title">Постоянная настороженность</h3>
+          <div class="post-body">
+            <p>
+              Как может концентрация снижаться из-за… концентрации? Любая нестабильная ситуация
+              заставляет мозг постоянно отслеживать окружение на наличие угроз. Например, проверять
+              новости вместо работы. Но сохранять собранность бесконечно невозможно. Внимание —
+              это ресурс, который истощается без своевременного отдыха.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h3 class="post-title">Питание</h3>
+          <div class="post-body">
+            <p>
+              Простые углеводы — сахар, выпечка, сладости — быстро поставляют энергию мозгу,
+              временно улучшая его работу. Однако эффект непродолжителен. После всплеска активности
+              наступает спад: появляются усталость и сонливость. Возникает желание снова получить
+              быстрые углеводы.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h3 class="post-title">Технологии</h3>
+          <div class="post-body">
+            <p>
+              Типичная ситуация: на экране — рабочий проект, в наушниках — аудиозапись,
+              а на втором мониторе — развлекательный контент. Мозг пытается переключаться между
+              источниками информации и не справляется. Для возвращения в состояние глубокой
+              концентрации требуется около 20 минут. Чем больше времени проводим в цифровых
+              устройствах, тем сложнее потом вернуться к продуктивной деятельности.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="content-block block-three">
+      <h2 class="block-title">Как удерживать внимание дольше золотой рыбки (больше трёх секунд)</h2>
+      <div class="articles-container">
+        <div class="post special-heading">
+          <h3 class="block-title">5&nbsp;практичных (но&nbsp;не&nbsp;простых) рекомендаций</h3>
+        </div>
+        <article class="post">
+          <h4 class="post-title">Визуализируйте небо и&nbsp;облака</h4>
+          <div class="post-body">
+            <p>
+              Или листья на воде. Это лёгкая медитативная практика для успокоения.
+              Часто именно тревога о сложных задачах мешает их выполнению. Закройте глаза
+              и представьте, что чистое небо — это вы, а проплывающие облака — тревожные мысли.
+              Сколько бы их ни было, небо остаётся неизменным. Это помогает вернуться в
+              настоящее и снизить беспокойство о будущем.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h4 class="post-title">Используйте фоновое звуковое сопровождение</h4>
+          <div class="post-body">
+            <p>
+              Подойдёт не любая музыка. Любимые треки могут вызывать сильные эмоции,
+              которые отвлекают. Выберите спокойную, нейтральную, с равномерным ритмом.
+              Можно попробовать плейлисты с природными звуками, белым шумом или специальными
+              нейромелодиями.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h4 class="post-title">Выйдите на&nbsp;прогулку</h4>
+          <div class="post-body">
+            <p>
+              Или сделайте пробежку. Лучше выбрать парк или лесную зону: исследование
+              <a
+                class="highlighted"
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                target="_blank"
+              >подтвердило</a>, что наблюдение за природой повышает концентрацию,
+              а городские пейзажи её снижают. Можно сочетать прогулку с физической
+              активностью — это улучшит насыщение мозга кислородом. Даже обычная
+              двадцатиминутная прогулка будет полезна.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h4 class="post-title">Следите за&nbsp;рационом</h4>
+          <div class="post-body">
+            <p>
+              Выбирайте продукты, которые не вызывают резких колебаний уровня глюкозы.
+              Богатые клетчаткой: овощи, ягоды, бобовые (нут, чечевица, фасоль),
+              нешлифованный рис, цельнозерновой хлеб.
+            </p>
+          </div>
+        </article>
+        <article class="post">
+          <h4 class="post-title">Читайте бумажные книги</h4>
+          <div class="post-body">
+            <p>
+              Это действительно тренирует концентрацию: для просмотра соцсети достаточно
+              минуты, а увлекательная книга может захватить на несколько часов, развивая
+              способность к длительному сосредоточению.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="content-block gallery-section">
+      <div class="articles-container">
+        <article class="post">
+          <h2 class="post-title">Можно посмотреть?</h2>
+          <div class="image-grid">
+            <img class="grid-image" loading="lazy" src="./images/sunset.png" alt="Морские птицы на фоне заката">
+            <img class="grid-image" loading="lazy" src="./images/ice-cream.png" alt="Весёлые шарики мороженого">
+            <img class="grid-image" loading="lazy" src="./images/tape.png" alt="Кассета для аудиозаписи">
+            <img class="grid-image" loading="lazy" src="./images/books.png" alt="Стопка книг">
+            <img class="grid-image" loading="lazy" src="./images/street.png" alt="Уютная улочка">
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer framed-section">
+    <h2 class="footer-heading">внимание</h2>
+  </footer>
+  <script src="./scripts/main.js"></script>
+</body>
 </html>
