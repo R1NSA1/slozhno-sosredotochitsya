@@ -4,9 +4,9 @@
   --button-color: #353430;
   --button-hover-border: #32312d66;
   --section-header-color: #353430;
-  --accent-color: #ff8dcb;
   --article-header-color: #353430;
   --main-header-color: #ffc2e6;
+  --accent-color: #ff8dcb;
   --bg-image: url("../images/cover-image-light.png");
   --rec-type: none;
 }
@@ -18,9 +18,9 @@
     --button-color: #353430;
     --button-hover-border: #32312d66;
     --section-header-color: #353430;
-    --accent-color: #ff8dcb;
     --article-header-color: #353430;
     --main-header-color: #ffc2e6;
+    --accent-color: #ff8dcb;
     --bg-image: url("../images/cover-image-light.png");
     --rec-type: none;
   }
